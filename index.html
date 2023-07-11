@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Bottle Ad</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <div class="buttonDiv">
+          <span class="button" src="./images/button.png" alt="">Buy Now</span>
+        </div>
+        <img class="bottle" src="./images/bottle.png" alt="" />
+      </div>
+    </div>
+    <script src="anime.min.js"></script>
+    <script>
+      anime({
+        targets: '.bottle',
+        translateX: 250,
+        direction: 'alternate',
+        loop: true,
+        easing: 'spring(3, 50, 10, 0)'
+      })
+      anime({
+        targets: '.buttonDiv',
+        backgroundColor: '#d6cbff',
+        easing: 'easeOutInQuad',
+        direction: 'alternate',
+        loop:true,
+        dropShadow: '0 0 0.75rem crimson',
+      })
+      anime({
+        targets: '.button',
+        easing: 'easeOutInQuad',
+        direction: 'alternate',
+        loop:true,
+      })
+    </script>
+  </body>
+</html>

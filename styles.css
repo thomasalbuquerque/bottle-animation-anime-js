@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 211px;
+  height: 421px;
+}
+.container {
+}
+.background {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 58px;
+  width: 211px;
+  height: 421px;
+  background-image: url('./images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 24px;
+  background-color: #8b62dc;
+  color: white;
+  /* position: absolute;
+  left: 63px;
+  top: 40%; */
+}
+.button {
+  /* width: 84px; 76
+  height: 27px;  24*/
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: small;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+}
+.bottle {
+  position: absolute;
+  width: 64px;
+  height: 165px;
+  left: -172px;
+  top: 215px;
+}
